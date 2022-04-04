@@ -45,7 +45,7 @@ remaining_url = [] // for sync when offline
 
   // for data sync
   function remaining_url_create(){
-    console.log('running')
+    // console.log('running')
     if (remaining_url.length > 0 && navigator.onLine) {
       jQuery.each(remaining_url, function(i) {
        create_url(remaining_url[i])
@@ -61,7 +61,7 @@ remaining_url = [] // for sync when offline
       url:'/urls',
       data: {"url": {"url": value}, "commit": "Create Url"},
       success: function(data){
-        console.log(data);
+        // console.log(data);
       }
     });
   }
