@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require animate
+ */
+
+ @import "bootstrap";
+
+ body {
+  height: 100%;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+ .text-input{
+  border: 1px solid #dddddd;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  font-size: 16px;
+  font-weight: bold;
+  background: #fff;
+  width: 100%;
+ }
+
+ .error {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 90%;
+  color: #ff0000;
+}
+
+.error-box {
+  border-color: #ff0000 !important;
+  padding-right: calc(1.5em + .75rem) !important;
+  background-repeat: no-repeat !important;
+  background-position: right calc(.375em + .1875rem) center !important;
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem) !important;
+}
+
+.footer-div {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/ 
+  height: 40px;
+  text-align: center;
+}
+
+.logo-name {
+  font-family: Google Sans Regular;
+  font-size: xx-large;
+  letter-spacing: 3px;
+  padding: 0 10px;
+  text-align: center;
+}

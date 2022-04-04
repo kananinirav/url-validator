@@ -1,0 +1,20 @@
+<div class="card mt-3 animated fadeInUp">
+  <div class="card-body">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="url-content">
+          <p style="font-size: x-large;"> URL Validator </p>
+          <form class="form_submit mb-4" id="new_url" data-remote='true'>
+            <input class="text-input error_span" placeholder="Please Enter URL" type="text" id="url_url">
+          </form>
+          <p style="font-size: larger;">Validated URL List </p>
+          <ul class="list-group list-group-flush" id = 'menu'>
+            <span id="childElement"></span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= javascript_pack_tag 'url' %>
+

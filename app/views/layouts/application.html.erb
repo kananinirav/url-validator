@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL-Validator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container justify-content-center">
+      <div class="logo-name">nirav.k()</div>
+      <%= yield %>
+    </div>
+    <div class="footer-div animated fadeInDown"><p class="react-reveal footer-text" style="color: rgb(141, 141, 141);">Made with <span role="img">❤️</span> by Nirav Kanani</p></div>
+  </body>
+</html>
